@@ -1,0 +1,1734 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
+
+    <title>GaminX</title>
+
+</head>
+
+<body>
+    
+    <style>
+        body {
+            background-image: url(img/background_pattern.png);
+        }
+    </style>
+
+    <div class="header-wrapper">
+
+        <div class="header__block container">
+
+            <input type="checkbox" id="mobile-menu" class="mm">
+
+            <label for="mobile-menu">
+                <img src="img/logo_burger.png" alt="Меню" class="mobile__menu--logo">
+            </label>
+
+            <input type="checkbox" id="close-mobile-menu" class="cm">
+
+            <label for="close-mobile-menu">
+                <img src="img/logo_close.png" alt="Закрыть" class="close__mobile__menu--logo">
+            </label>
+
+            <div class="header__mainlogo">
+
+                <div class="header__mainlogo--block">
+
+                    <img class="header__logo" src="img/logo_main.png" alt="Gray Shark">
+
+                    <div class="header__name">
+
+                        <h1 class="header__name--main">BlogerShop</h1>
+
+                        <div class="header__name--second--block">
+
+                            <div>
+                                <span class="header__name--second--text">bloger-shop.com</span>
+                            </div>
+
+                            <div>
+                                <i class="fas fa-check-circle header__name--second--logo"></i>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+                
+            <div class="header__search--block">
+
+                <form action="#" class="header__search">
+
+                    <input type="text" class="header__search--field" placeholder="Поиск в моем магазине…">
+                    <i class="fas fa-search header__search--button"></i>
+
+                </form>
+
+            </div>
+
+            <div class="header__nav">
+
+                    <div class="header__buy">
+                        <span class="header__nav--text">Покупка и доставка</span>
+                    </div>
+
+                    <div class="header__gifts">
+                        <i class="fas fa-star header__gifts--logo"></i>
+                        <span class="header__nav--text">Подарки</span>
+                    </div>
+
+                    <div class="header__support">
+                        <i class="fas fa-headset header__support--logo"></i>
+                        <span class="header__nav--text">Поддержка</span>
+                    </div>
+
+                    <div class="site-btn my-purchases-btn">
+
+                        <span><i class="fas fa-shopping-cart btn-icon"></i>Мои покупки</span>
+
+                    </div>
+
+            </div>
+
+            <div class="header__nav--mobile">
+
+                <div class="header__buy">
+                    <span class="header__nav--text">Покупка и доставка</span>
+                </div>
+
+                <div class="header__gifts">
+                    <i class="fas fa-star header__gifts--logo"></i>
+                    <span class="header__nav--text">Подарки</span>
+                </div>
+
+                <div class="header__support">
+                    <i class="fas fa-headset header__support--logo"></i>
+                    <span class="header__nav--text">Поддержка</span>
+                </div>
+
+                <div class="site-btn my-purchases-btn">
+
+                    <span><i class="fas fa-shopping-cart btn-icon"></i>Мои покупки</span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <section class="banners main-bg">
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-12">
+
+                    <div class="banner__first--block">
+
+                        <!-- Доделать фон -->
+
+                        <div class="banner__first--image"></div>
+
+                        <div class="banner__first--toplayer">
+
+                            <div class="banner__first--toplayer--content">
+
+                                <div class="banner__first--toplayer--text">
+                                    <p>
+                                        Летняя <br>распродажа
+                                    </p>
+                                </div>
+
+                                <div class=banner__first--toplayer--timer>
+
+                                    <div class="banner__first--toplayer--timer--back">
+                                        <div class="banner__first--toplayer--timer--left">
+                                            Осталось
+                                        </div>
+                                        <div class="banner__first--toplayer--timer--digits">
+                                            <div class="banner__first--toplayer--timer--days">
+                                                2 дня
+                                            </div>
+                                            <div class="banner__first--toplayer--timer--hours">07<span
+                                                    class="timer-decor"> : </span>04<span class="timer-decor"> : </span>26
+                                            </div>
+                                        </div>
+
+                                        <!-- Сделать правильное выравнивание -->
+
+                                    </div>
+
+                                    <div class="site-btn timer-btn">
+
+                                        <span><i class="fas fa-trophy btn-icon"></i>ПЕРЕЙТИ</span>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+
+                <div class="col-lg-6">
+                    <div class="banner__second">
+                        <img class="banner__second--image" src="img/banner_second_left.png" alt="Реклама">
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="banner__third">
+                        <img class="banner__third--image" src="img/banner_second_right.png" alt="Реклама">
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <main>
+
+        <!-- Каталог -->
+
+        <section class="container main-bg site-block-outside  site-block-inside">
+
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+
+                <li class="nav-item selected__tab" role="presentation">
+
+                    <a class="nav-link active" id="games-tab" data-toggle="tab" href="#games" role="tab"
+                        aria-controls="games" aria-selected="true">
+
+                        <div class="tab__button">
+
+                            <i class="fas fa-gamepad tab__button--logo-games"></i>
+
+                            <span class="tab__button--text">Игры</span>
+
+                        </div>
+
+                    </a>
+
+                </li>
+
+                <li class="nav-item" role="presentation">
+
+                    <a class="nav-link" id="sets-tab" data-toggle="tab" href="#sets" role="tab" aria-controls="sets"
+                        aria-selected="false">
+
+                        <div class="tab__button">
+
+                            <i class="fas fa-box-open tab__button--logo-sets"></i>
+
+                            <span class="tab__button--text">Игровые наборы</span>
+
+                        </div>
+
+                    </a>
+
+                </li>
+
+            </ul>
+
+            <div class="tab-content" id="myTabContent">
+
+                <!-- Вкладка "Игры" -->
+
+                <div class="tab-pane" id="games" role="presentation" aria-labelledby="games-tab">
+
+                    <div class="tab__top-buttons">
+
+                        <div class="tab__top-buttons--style active-filter">
+
+                            <i class="fas fa-key tab__top-buttons--logo"></i>
+
+                            <span class="tab__top-buttons--text">Лицензионные ключи</span>
+
+                        </div>
+
+                        <div class="tab__top-buttons--style">
+
+                            <i class="fas fa-user tab__top-buttons--logo"></i>
+
+                            <span class="tab__top-buttons--text">Аккаунты</span>
+
+                        </div>
+
+                        <div class="tab__top-buttons--style">
+
+                            <i class="fas fa-trophy tab__top-buttons--logo"></i>
+
+                            <span class="tab__top-buttons--text">Еще фильтр</span>
+
+                        </div>
+
+                        <div class="tab__top-buttons--style">
+
+                            <i class="fas fa-gamepad tab__top-buttons--logo"></i>
+
+                            <span class="tab__top-buttons--text">Еще фильтр</span>
+
+                        </div>
+
+                    </div>
+
+                    <div class="tab__content">
+                        <div class="tab__content--top">
+
+                            <form action="#" class="tab__content--top--search">
+
+                                <input type="text" class="tab__content--top--search-field" placeholder="По названию...">
+
+                                <i class="tab__content--top--search-button fas fa-search"></i>
+
+                            </form>
+
+                            <div class="tab__content--top--filters">
+
+
+                               
+
+                                <div class="tab__content--top--filters-item selected">
+
+                                    <span class="tab__content--top--filters-text">Популярное</span>
+
+                                </div>
+
+
+                               
+                                <div class="tab__content--top--filters-item selected">
+
+                                    <span class="tab__content--top--filters-text">Новинки</span>
+
+                                </div>
+
+                             
+
+                                <div class="tab__content--top--filters-item">
+
+                                    <span class="tab__content--top--filters-text">Еще фильтр</span>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                       
+
+                        <div class="container">
+
+                            <div class="row">
+
+                                <div class="col-sm-6 col-lg-3 col-md-4 col-xxl-2">
+
+                                    <div class="gamecard">
+
+                                        <img src="img/showcase_game_1.png" alt="Game" class="gamecard__img">
+
+                                        <div class="gamecard__toplayer">
+
+                                            <div class="gamecard__price">
+
+                                                <div class="gamecard__price--actual">
+                                                    159 &#8381;
+                                                </div>
+
+                                                <div class="gamecard__price--starting">
+                                                    949 &#8381;
+                                                </div>
+
+                                            </div>
+
+                                            <div class="gamecard__price--gamesource">
+                                                <img src="img/showcase_logo_gamesource.svg" alt="Магазин">
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="col-sm-6 col-lg-3 col-md-4 col-xxl-2">
+
+                                    <div class="gamecard">
+
+                                        <img src="img/showcase_game_10.png" alt="Game" class="gamecard__img">
+
+                                        <div class="gamecard__toplayer">
+
+                                            <div class="gamecard__price no-sale">
+
+                                                <div class="gamecard__price--actual">
+                                                    159 &#8381;
+                                                </div>
+
+                                                <div class="gamecard__price--starting">
+                                                    949 &#8381;
+                                                </div>
+
+                                            </div>
+
+                                            <div class="gamecard__price--gamesource">
+                                                <img src="img/showcase_logo_gamesource_2.svg" alt="Магазин">
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="col-sm-6 col-lg-3 col-md-4 col-xxl-2">
+
+                                    <div class="gamecard">
+
+                                        <img src="img/showcase_game_3.png" alt="Game" class="gamecard__img">
+
+                                        <div class="gamecard__toplayer">
+
+                                            <div class="gamecard__price">
+
+                                                <div class="gamecard__price--actual">
+                                                    159 &#8381;
+                                                </div>
+
+                                                <div class="gamecard__price--starting">
+                                                    949 &#8381;
+                                                </div>
+
+                                            </div>
+
+                                            <div class="gamecard__price--gamesource">
+                                                <img src="img/showcase_logo_gamesource.svg" alt="Магазин">
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="col-sm-6 col-lg-3 col-md-4 col-xxl-2">
+
+                                    <div class="gamecard">
+
+                                        <img src="img/showcase_game_4.png" alt="Game" class="gamecard__img">
+
+                                        <div class="gamecard__toplayer">
+
+                                            <div class="gamecard__price">
+
+                                                <div class="gamecard__price--actual">
+                                                    159 &#8381;
+                                                </div>
+
+                                                <div class="gamecard__price--starting">
+                                                    949 &#8381;
+                                                </div>
+
+                                            </div>
+
+                                            <div class="gamecard__price--gamesource">
+                                                <img src="img/showcase_logo_gamesource.svg" alt="Магазин">
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="col-sm-6 col-lg-3 col-md-4 col-xxl-2">
+
+                                    <div class="gamecard">
+
+                                        <img src="img/showcase_game_5.png" alt="Game" class="gamecard__img">
+
+                                        <div class="gamecard__toplayer">
+
+                                            <div class="gamecard__price">
+
+                                                <div class="gamecard__price--actual">
+                                                    159 &#8381;
+                                                </div>
+
+                                                <div class="gamecard__price--starting">
+                                                    949 &#8381;
+                                                </div>
+
+                                            </div>
+
+                                            <div class="gamecard__price--gamesource">
+                                                <img src="img/showcase_logo_gamesource.svg" alt="Магазин">
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="col-sm-6 col-lg-3 col-md-4 col-xxl-2">
+
+                                    <div class="gamecard">
+
+                                        <img src="img/showcase_game_6.png" alt="Game" class="gamecard__img">
+
+                                        <div class="gamecard__toplayer">
+
+                                            <div class="gamecard__price">
+
+                                                <div class="gamecard__price--actual">
+                                                    159 &#8381;
+                                                </div>
+
+                                                <div class="gamecard__price--starting">
+                                                    949 &#8381;
+                                                </div>
+
+                                            </div>
+
+                                            <div class="gamecard__price--gamesource">
+                                                <img src="img/showcase_logo_gamesource.svg" alt="Магазин">
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            
+
+        
+
+                                <div class="col-sm-6 col-lg-3 col-md-4 col-xxl-2">
+
+                                    <div class="gamecard">
+
+                                        <img src="img/showcase_game_10.png" alt="Game" class="gamecard__img">
+
+                                        <div class="gamecard__toplayer">
+
+                                            <div class="gamecard__price no-sale">
+
+                                                <div class="gamecard__price--actual">
+                                                    159 &#8381;
+                                                </div>
+
+                                                <div class="gamecard__price--starting">
+                                                    949 &#8381;
+                                                </div>
+
+                                            </div>
+
+                                            <div class="gamecard__price--gamesource">
+                                                <img src="img/showcase_logo_gamesource_2.svg" alt="Магазин">
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="col-sm-6 col-lg-3 col-md-4 col-xxl-2">
+
+                                    <div class="gamecard">
+
+                                        <img src="img/showcase_game_8.png" alt="Game" class="gamecard__img">
+
+                                        <div class="gamecard__toplayer">
+
+                                            <div class="gamecard__price">
+
+                                                <div class="gamecard__price--actual">
+                                                    159 &#8381;
+                                                </div>
+
+                                                <div class="gamecard__price--starting">
+                                                    949 &#8381;
+                                                </div>
+
+                                            </div>
+
+                                            <div class="gamecard__price--gamesource">
+                                                <img src="img/showcase_logo_gamesource.svg" alt="Магазин">
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="col-sm-6 col-lg-3 col-md-4 col-xxl-2">
+
+                                    <div class="gamecard">
+
+                                        <img src="img/showcase_game_9.png" alt="Game" class="gamecard__img">
+
+                                        <div class="gamecard__toplayer">
+
+                                            <div class="gamecard__price">
+
+                                                <div class="gamecard__price--actual">
+                                                    159 &#8381;
+                                                </div>
+
+                                                <div class="gamecard__price--starting">
+                                                    949 &#8381;
+                                                </div>
+
+                                            </div>
+
+                                            <div class="gamecard__price--gamesource">
+                                                <img src="img/showcase_logo_gamesource.svg" alt="Магазин">
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="col-sm-6 col-lg-3 col-md-4 col-xxl-2">
+
+                                    <div class="gamecard">
+
+                                        <img src="img/showcase_game_10.png" alt="Game" class="gamecard__img">
+
+                                        <div class="gamecard__toplayer">
+
+                                            <div class="gamecard__price no-sale">
+
+                                                <div class="gamecard__price--actual">
+                                                    159 &#8381;
+                                                </div>
+
+                                                <div class="gamecard__price--starting">
+                                                    949 &#8381;
+                                                </div>
+
+                                            </div>
+
+                                            <div class="gamecard__price--gamesource">
+                                                <img src="img/showcase_logo_gamesource_2.svg" alt="Магазин">
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="col-sm-6 col-lg-3 col-md-4 col-xxl-2">
+
+                                    <div class="gamecard">
+
+                                        <img src="img/showcase_game_11.png" alt="Game" class="gamecard__img">
+
+                                        <div class="gamecard__toplayer">
+
+                                            <div class="gamecard__price">
+
+                                                <div class="gamecard__price--actual">
+                                                    159 &#8381;
+                                                </div>
+
+                                                <div class="gamecard__price--starting">
+                                                    949 &#8381;
+                                                </div>
+
+                                            </div>
+
+                                            <div class="gamecard__price--gamesource">
+                                                <img src="img/showcase_logo_gamesource.svg" alt="Магазин">
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="col-sm-6 col-lg-3 col-md-4 col-xxl-2">
+
+                                    <div class="gamecard">
+
+                                        <img src="img/showcase_game_12.png" alt="Game" class="gamecard__img">
+
+                                        <div class="gamecard__toplayer">
+
+                                            <div class="gamecard__price">
+
+                                                <div class="gamecard__price--actual">
+                                                    159 &#8381;
+                                                </div>
+
+                                                <div class="gamecard__price--starting">
+                                                    949 &#8381;
+                                                </div>
+
+                                            </div>
+
+                                            <div class="gamecard__price--gamesource">
+                                                <img src="img/showcase_logo_gamesource.svg" alt="Магазин">
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                             
+
+                                <div class="col-sm-6 col-lg-3 col-md-4 col-xxl-2">
+
+                                    <div class="gamecard">
+
+                                        <img src="img/showcase_game_1.png" alt="Game" class="gamecard__img">
+
+                                        <div class="gamecard__toplayer">
+
+                                            <div class="gamecard__price">
+
+                                                <div class="gamecard__price--actual">
+                                                    159 &#8381;
+                                                </div>
+
+                                                <div class="gamecard__price--starting">
+                                                    949 &#8381;
+                                                </div>
+
+                                            </div>
+
+                                            <div class="gamecard__price--gamesource">
+                                                <img src="img/showcase_logo_gamesource.svg" alt="Магазин">
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="col-sm-6 col-lg-3 col-md-4 col-xxl-2">
+
+                                    <div class="gamecard">
+
+                                        <img src="img/showcase_game_6.png" alt="Game" class="gamecard__img">
+
+                                        <div class="gamecard__toplayer">
+
+                                            <div class="gamecard__price">
+
+                                                <div class="gamecard__price--actual">
+                                                    159 &#8381;
+                                                </div>
+
+                                                <div class="gamecard__price--starting">
+                                                    949 &#8381;
+                                                </div>
+
+                                            </div>
+
+                                            <div class="gamecard__price--gamesource">
+                                                <img src="img/showcase_logo_gamesource.svg" alt="Магазин">
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="col-sm-6 col-lg-3 col-md-4 col-xxl-2">
+
+                                    <div class="gamecard">
+
+                                        <img src="img/showcase_game_12.png" alt="Game" class="gamecard__img">
+
+                                        <div class="gamecard__toplayer">
+
+                                            <div class="gamecard__price">
+
+                                                <div class="gamecard__price--actual">
+                                                    159 &#8381;
+                                                </div>
+
+                                                <div class="gamecard__price--starting">
+                                                    949 &#8381;
+                                                </div>
+
+                                            </div>
+
+                                            <div class="gamecard__price--gamesource">
+                                                <img src="img/showcase_logo_gamesource.svg" alt="Магазин">
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="col-sm-6 col-lg-3 col-md-4 col-xxl-2">
+
+                                    <div class="gamecard">
+
+                                        <img src="img/showcase_game_4.png" alt="Game" class="gamecard__img">
+
+                                        <div class="gamecard__toplayer">
+
+                                            <div class="gamecard__price">
+
+                                                <div class="gamecard__price--actual">
+                                                    159 &#8381;
+                                                </div>
+
+                                                <div class="gamecard__price--starting">
+                                                    949 &#8381;
+                                                </div>
+
+                                            </div>
+
+                                            <div class="gamecard__price--gamesource">
+                                                <img src="img/showcase_logo_gamesource.svg" alt="Магазин">
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="col-sm-6 col-lg-3 col-md-4 col-xxl-2">
+
+                                    <div class="gamecard">
+
+                                        <img src="img/showcase_game_7.png" alt="Game" class="gamecard__img">
+
+                                        <div class="gamecard__toplayer">
+
+                                            <div class="gamecard__price">
+
+                                                <div class="gamecard__price--actual">
+                                                    159 &#8381;
+                                                </div>
+
+                                                <div class="gamecard__price--starting">
+                                                    949 &#8381;
+                                                </div>
+
+                                            </div>
+
+                                            <div class="gamecard__price--gamesource">
+                                                <img src="img/showcase_logo_gamesource.svg" alt="Магазин">
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="col-sm-6 col-lg-3 col-md-4 col-xxl-2">
+
+                                    <div class="gamecard">
+
+                                        <img src="img/showcase_game_9.png" alt="Game" class="gamecard__img">
+
+                                        <div class="gamecard__toplayer">
+
+                                            <div class="gamecard__price">
+
+                                                <div class="gamecard__price--actual">
+                                                    159 &#8381;
+                                                </div>
+
+                                                <div class="gamecard__price--starting">
+                                                    949 &#8381;
+                                                </div>
+
+                                            </div>
+
+                                            <div class="gamecard__price--gamesource">
+                                                <img src="img/showcase_logo_gamesource.svg" alt="Магазин">
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+
+                                <div class="col-sm-6 col-lg-3 col-md-4 col-xxl-2">
+
+                                    <div class="gamecard">
+
+                                        <img src="img/showcase_game_8.png" alt="Game" class="gamecard__img">
+
+                                        <div class="gamecard__toplayer">
+
+                                            <div class="gamecard__price">
+
+                                                <div class="gamecard__price--actual">
+                                                    159 &#8381;
+                                                </div>
+
+                                                <div class="gamecard__price--starting">
+                                                    949 &#8381;
+                                                </div>
+
+                                            </div>
+
+                                            <div class="gamecard__price--gamesource">
+                                                <img src="img/showcase_logo_gamesource.svg" alt="Магазин">
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="col-sm-6 col-lg-3 col-md-4 col-xxl-2">
+
+                                    <div class="gamecard">
+
+                                        <img src="img/showcase_game_2.png" alt="Game" class="gamecard__img">
+
+                                        <div class="gamecard__toplayer">
+
+                                            <div class="gamecard__price">
+
+                                                <div class="gamecard__price--actual">
+                                                    159 &#8381;
+                                                </div>
+
+                                                <div class="gamecard__price--starting">
+                                                    949 &#8381;
+                                                </div>
+
+                                            </div>
+
+                                            <div class="gamecard__price--gamesource">
+                                                <img src="img/showcase_logo_gamesource.svg" alt="Магазин">
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="col-sm-6 col-lg-3 col-md-4 col-xxl-2">
+
+                                    <div class="gamecard">
+
+                                        <img src="img/showcase_game_12.png" alt="Game" class="gamecard__img">
+
+                                        <div class="gamecard__toplayer">
+
+                                            <div class="gamecard__price">
+
+                                                <div class="gamecard__price--actual">
+                                                    159 &#8381;
+                                                </div>
+
+                                                <div class="gamecard__price--starting">
+                                                    949 &#8381;
+                                                </div>
+
+                                            </div>
+
+                                            <div class="gamecard__price--gamesource">
+                                                <img src="img/showcase_logo_gamesource.svg" alt="Магазин">
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="col-sm-6 col-lg-3 col-md-4 col-xxl-2">
+
+                                    <div class="gamecard">
+
+                                        <img src="img/showcase_game_5.png" alt="Game" class="gamecard__img">
+
+                                        <div class="gamecard__toplayer">
+
+                                            <div class="gamecard__price">
+
+                                                <div class="gamecard__price--actual">
+                                                    159 &#8381;
+                                                </div>
+
+                                                <div class="gamecard__price--starting">
+                                                    949 &#8381;
+                                                </div>
+
+                                            </div>
+
+                                            <div class="gamecard__price--gamesource">
+                                                <img src="img/showcase_logo_gamesource.svg" alt="Магазин">
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="col-sm-6 col-lg-3 col-md-4 col-xxl-2">
+
+                                    <div class="gamecard">
+
+                                        <img src="img/showcase_game_6.png" alt="Game" class="gamecard__img">
+
+                                        <div class="gamecard__toplayer">
+
+                                            <div class="gamecard__price">
+
+                                                <div class="gamecard__price--actual">
+                                                    159 &#8381;
+                                                </div>
+
+                                                <div class="gamecard__price--starting">
+                                                    949 &#8381;
+                                                </div>
+
+                                            </div>
+
+                                            <div class="gamecard__price--gamesource">
+                                                <img src="img/showcase_logo_gamesource.svg" alt="Магазин">
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="col-sm-6 col-lg-3 col-md-4 col-xxl-2">
+
+                                    <div class="gamecard">
+
+                                        <img src="img/showcase_game_10.png" alt="Game" class="gamecard__img">
+
+                                        <div class="gamecard__toplayer">
+
+                                            <div class="gamecard__price no-sale">
+
+                                                <div class="gamecard__price--actual">
+                                                    159 &#8381;
+                                                </div>
+
+                                                <div class="gamecard__price--starting">
+                                                    949 &#8381;
+                                                </div>
+
+                                            </div>
+
+                                            <div class="gamecard__price--gamesource">
+                                                <img src="img/showcase_logo_gamesource_2.svg" alt="Магазин">
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="showcase__show-more">
+
+                                <button class="site-btn show-more-btn">
+
+                                    <span><i class="fas fa-sync-alt btn-icon"></i>ПОКАЗАТЬ БОЛЬШЕ</span>
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                        
+
+                    </div>
+
+                </div>
+
+
+                <!-- Вкладка "Игровые наборы" -->
+
+                <div class="tab-pane show active" id="sets" role="presentation" aria-labelledby="sets-tab">
+
+                    <div class="tab__top-buttons">
+
+
+                            <!--Отдельный фильтр-->
+    
+                            <div class="tab__top-buttons--style active-filter">
+    
+                                <i class="fas fa-key tab__top-buttons--logo"></i>
+    
+                                <span class="tab__top-buttons--text">CS:GO</span>
+    
+                            </div>
+    
+                            <!-- Отдельный фильтр -->
+    
+                            <div class="tab__top-buttons--style">
+    
+                                <i class="fas fa-user tab__top-buttons--logo"></i>
+    
+                                <span class="tab__top-buttons--text">DOTA 2</span>
+    
+                            </div>
+    
+                            <!-- Отдельный фильтр -->
+    
+                            <div class="tab__top-buttons--style">
+    
+                                <i class="fas fa-trophy tab__top-buttons--logo"></i>
+    
+                                <span class="tab__top-buttons--text">Еще фильтр</span>
+    
+                            </div>
+    
+                            <!-- Отдельный фильтр -->
+    
+                            <div class="tab__top-buttons--style">
+    
+                                <i class="fas fa-gamepad tab__top-buttons--logo"></i>
+    
+                                <span class="tab__top-buttons--text">Еще фильтр</span>
+    
+                            </div>
+    
+                    </div>
+    
+                    <div class="tab__content">
+
+                        <div class="tab__content--top">
+    
+                                <!--Поиск и фильтры вкладки-->
+    
+                                <form action="#" class="tab__content--top--search">
+    
+                                    <input type="text" class="tab__content--top--search-field" placeholder="По названию...">
+    
+                                    <i class="tab__content--top--search-button fas fa-search"></i>
+    
+                                </form>
+    
+                                <div class="tab__content--top--filters">
+    
+    
+                                    <!--Фильтр-->
+    
+                                    <div class="tab__content--top--filters-item selected">
+    
+                                        <span class="tab__content--top--filters-text">BattlePass2021</span>
+    
+                                    </div>
+    
+    
+                                    <!--Фильтр-->
+    
+                                    <div class="tab__content--top--filters-item selected">
+    
+                                        <span class="tab__content--top--filters-text">Пушки</span>
+    
+                                    </div>
+    
+                                    <!--Фильтр-->
+    
+                                    <div class="tab__content--top--filters-item">
+    
+                                        <span class="tab__content--top--filters-text">Еще фильтр</span>
+    
+                                    </div>
+    
+                                </div>
+    
+                        </div>
+
+                        
+
+                            <div class="gameset__block">
+
+                                <div class="gameset__header">
+
+                                    <h2 class="gameset__header--text">Кровь дракона</h2>
+
+                                </div>
+
+                                <div class="row">
+
+                                    <div class="col-sm-6 col-lg-3 col-md-4 col-xxl-2">
+
+                                        <div class="gameset">
+                                            <div class="gameset__name--block">
+                                                <p class="gameset__name--upper">CS:GO</p>
+                                                <p class="gameset__name--lower">Засекреченное</p>
+                                            </div>
+                                        <img src="img/gameset__item.png" alt="Игровой набор">
+                                        <div class="gameset__price">159 &#8381;</div>
+
+                                    </div>
+
+                                    </div>
+
+                                    <div class="col-sm-6 col-lg-3 col-md-4 col-xxl-2">
+
+                                        <div class="gameset">
+                                            <div class="gameset__name--block">
+                                                <p class="gameset__name--upper">CS:GO</p>
+                                                <p class="gameset__name--lower">Засекреченное</p>
+                                            </div>
+                                        <img src="img/gameset__item.png" alt="Игровой набор">
+                                        <div class="gameset__price">159 &#8381;</div>
+
+                                    </div>
+
+                                    </div>
+
+                                    <div class="col-sm-6 col-lg-3 col-md-4 col-xxl-2">
+
+                                        <div class="gameset">
+                                            <div class="gameset__name--block">
+                                                <p class="gameset__name--upper">CS:GO</p>
+                                                <p class="gameset__name--lower">Засекреченное</p>
+                                            </div>
+                                        <img src="img/gameset__item.png" alt="Игровой набор">
+                                        <div class="gameset__price">159 &#8381;</div>
+
+                                    </div>
+
+                                    </div>
+
+                                    <div class="col-sm-6 col-lg-3 col-md-4 col-xxl-2">
+
+                                        <div class="gameset">
+                                            <div class="gameset__name--block">
+                                                <p class="gameset__name--upper">CS:GO</p>
+                                                <p class="gameset__name--lower">Засекреченное</p>
+                                            </div>
+                                        <img src="img/gameset__item.png" alt="Игровой набор">
+                                        <div class="gameset__price">159 &#8381;</div>
+
+                                    </div>
+
+                                    </div>
+
+                                    <div class="col-sm-6 col-lg-3 col-md-4 col-xxl-2">
+
+                                        <div class="gameset">
+                                            <div class="gameset__name--block">
+                                                <p class="gameset__name--upper">CS:GO</p>
+                                                <p class="gameset__name--lower">Засекреченное</p>
+                                            </div>
+                                        <img src="img/gameset__item.png" alt="Игровой набор">
+                                        <div class="gameset__price">159 &#8381;</div>
+
+                                    </div>
+
+                                    </div>
+
+                                    <div class="col-sm-6 col-lg-3 col-md-4 col-xxl-2">
+
+                                        <div class="gameset">
+                                            <div class="gameset__name--block">
+                                                <p class="gameset__name--upper">CS:GO</p>
+                                                <p class="gameset__name--lower">Засекреченное</p>
+                                            </div>
+                                        <img src="img/gameset__item.png" alt="Игровой набор">
+                                        <div class="gameset__price">159 &#8381;</div>
+
+                                    </div>
+
+                                    </div>
+
+                                    <div class="col-sm-6 col-lg-3 col-md-4 col-xxl-2">
+
+                                        <div class="gameset">
+                                            <div class="gameset__name--block">
+                                                <p class="gameset__name--upper">CS:GO</p>
+                                                <p class="gameset__name--lower">Засекреченное</p>
+                                            </div>
+                                        <img src="img/gameset__item.png" alt="Игровой набор">
+                                        <div class="gameset__price">159 &#8381;</div>
+
+                                    </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="gameset__block">
+
+                                <div class="gameset__header">
+
+                                    <h2 class="gameset__header--text">Наши бандлы</h2>
+
+                                </div>
+
+                                <div class="row">
+
+                                    <div class="col-sm-6 col-lg-3 col-md-4 col-xxl-2">
+
+                                        <div class="gameset">
+                                            <div class="gameset__name--block">
+                                                <p class="gameset__name--upper">CS:GO</p>
+                                                <p class="gameset__name--lower">Засекреченное</p>
+                                            </div>
+                                        <img src="img/gameset__item.png" alt="Игровой набор">
+                                        <div class="gameset__price">159 &#8381;</div>
+
+                                    </div>
+
+                                    </div>
+
+                                    <div class="col-sm-6 col-lg-3 col-md-4 col-xxl-2">
+
+                                        <div class="gameset">
+                                            <div class="gameset__name--block">
+                                                <p class="gameset__name--upper">CS:GO</p>
+                                                <p class="gameset__name--lower">Засекреченное</p>
+                                            </div>
+                                        <img src="img/gameset__item.png" alt="Игровой набор">
+                                        <div class="gameset__price">159 &#8381;</div>
+
+                                    </div>
+
+                                    </div>
+
+                                    <div class="col-sm-6 col-lg-3 col-md-4 col-xxl-2">
+
+                                        <div class="gameset">
+                                            <div class="gameset__name--block">
+                                                <p class="gameset__name--upper">CS:GO</p>
+                                                <p class="gameset__name--lower">Засекреченное</p>
+                                            </div>
+                                        <img src="img/gameset__item.png" alt="Игровой набор">
+                                        <div class="gameset__price">159 &#8381;</div>
+
+                                    </div>
+
+                                    </div>
+
+                                    <div class="col-sm-6 col-lg-3 col-md-4 col-xxl-2">
+
+                                        <div class="gameset">
+                                            <div class="gameset__name--block">
+                                                <p class="gameset__name--upper">CS:GO</p>
+                                                <p class="gameset__name--lower">Засекреченное</p>
+                                            </div>
+                                        <img src="img/gameset__item.png" alt="Игровой набор">
+                                        <div class="gameset__price">159 &#8381;</div>
+
+                                    </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        </section>
+
+        <article class="container main-bg site-block-outside  site-block-inside">
+
+            <div class="latest-buys__upper">
+                    <img src="img/latest-buys_logo.svg" alt="Последние покупки" class="latest-buys__logo">
+                    <span class="latest-buys__upper-text">Последние покупки</span>
+            </div>
+
+            <div class="row">
+
+                    <div class="col-sm-6 col-lg-3 col-md-4 col-xxl-2">
+
+                        <div class="latest-buys__gamecard">
+
+                            <img src="img/showcase_game_10.png" class="latest-buys__gamecard--img"
+                                alt="Последние покупки">
+
+                            <div class="latest-buys__gamecard--toplayer"></div>
+
+                            <span class="latest-buys__gamecard--email">
+                                user@gmail***
+                            </span>
+
+                            <span class="latest-buys__gamecard--time">
+                                5 сек назад
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-sm-6 col-lg-3 col-md-4 col-xxl-2">
+
+                        <div class="latest-buys__gamecard">
+
+                            <img src="img/showcase_game_1.png" class="latest-buys__gamecard--img"
+                                alt="Последние покупки">
+
+                            <div class="latest-buys__gamecard--toplayer"></div>
+
+                            <span class="latest-buys__gamecard--email">
+                                user@gmail***
+                            </span>
+
+                            <span class="latest-buys__gamecard--time">
+                                5 сек назад
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-sm-6 col-lg-3 col-md-4 col-xxl-2">
+
+                        <div class="latest-buys__gamecard">
+
+                            <img src="img/showcase_game_2.png" class="latest-buys__gamecard--img"
+                                alt="Последние покупки">
+
+                            <div class="latest-buys__gamecard--toplayer"></div>
+
+                            <span class="latest-buys__gamecard--email">
+                                user@gmail***
+                            </span>
+
+                            <span class="latest-buys__gamecard--time">
+                                5 сек назад
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-sm-6 col-lg-3 col-md-4 col-xxl-2">
+
+                        <div class="latest-buys__gamecard">
+
+                            <img src="img/showcase_game_4.png" class="latest-buys__gamecard--img"
+                                alt="Последние покупки">
+
+                            <div class="latest-buys__gamecard--toplayer"></div>
+
+                            <span class="latest-buys__gamecard--email">
+                                user@gmail***
+                            </span>
+
+                            <span class="latest-buys__gamecard--time">
+                                5 сек назад
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-sm-6 col-lg-3 col-md-4 col-xxl-2">
+
+                        <div class="latest-buys__gamecard">
+
+                            <img src="img/showcase_game_12.png" class="latest-buys__gamecard--img"
+                                alt="Последние покупки">
+
+                            <div class="latest-buys__gamecard--toplayer"></div>
+
+                            <span class="latest-buys__gamecard--email">
+                                user@gmail***
+                            </span>
+
+                            <span class="latest-buys__gamecard--time">
+                                5 сек назад
+                            </span>
+
+                        </div>
+
+
+                    </div>
+
+                    <div class="col-sm-6 col-lg-3 col-md-4 col-xxl-2">
+
+                        <div class="latest-buys__gamecard">
+
+                            <img src="img/showcase_game_7.png" class="latest-buys__gamecard--img"
+                                alt="Последние покупки">
+
+                            <div class="latest-buys__gamecard--toplayer"></div>
+
+                            <span class="latest-buys__gamecard--email">
+                                user@gmail***
+                            </span>
+
+                            <span class="latest-buys__gamecard--time">
+                                5 сек назад
+                            </span>
+
+                        </div>
+
+
+                    </div>
+
+            </div>
+
+        </article>
+
+        <!-- Соцсети -->
+
+        <section class="container">
+
+            <div class="social">
+
+                <div class="social__top">
+
+                    <img src="img/logo_main.png" alt="Blogershop" class="social__top--logo">
+
+                    <span class="social__top--name">
+                        BlogerShop
+                    </span>
+
+                    <span class="social__top--text">
+                        Подписывайся на канал, ставь лайки и покупай в магазине
+                    </span>
+
+                </div>
+
+                <div class="social__buttons">
+
+                    <a href="#" class="site-btn tube-btn">
+
+                        <span><i class="fab fa-youtube btn-icon"></i>Перейти на канал</span>
+
+                    </a>
+
+                    <a href=# class="site-btn vk-btn">
+
+                        <span><i class="fab fa-vk btn-icon"></i>Группа Вконтакте</span>
+
+                    </a>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+    </main>
+
+    <footer>
+
+        <div class="footer-top-bg">
+
+                <div class="footer__top container">
+
+                    <div class="footer__top__counters">
+
+                        <div class="footer__top__counters-1">
+
+                            <div class="footer__top__counter">
+
+                            <span class="footer__top__counter--number">
+                                72 131
+                            </span>
+
+                            <span class="footer__top__counter--text">
+                                Сегодня пользователей
+                            </span>
+
+                            </div>
+
+                            <div class="footer__top__counter">
+
+                            <span class="footer__top__counter--number">
+                                7 152 131
+                            </span>
+
+                            <span class="footer__top__counter--text">
+                                Всего пользователей
+                            </span>
+
+                            </div>
+
+                        </div>
+
+                        <div class="footer__top__counters-2">
+
+                            <div class="footer__top__counter">
+
+                            <span class="footer__top__counter--number">
+                                2
+                            </span>
+
+                            <span class="footer__top__counter--text">
+                                Аркан сегодня
+                            </span>
+
+                            </div>
+
+                            <div class="footer__top__counter">
+
+                            <span class="footer__top__counter--number">
+                                458 132 131
+                            </span>
+
+                            <span class="footer__top__counter--text">
+                                Всего покупок
+                            </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+        </div>
+
+        <div class="footer-bottom-bg">
+
+            <div class="footer__bottom container">
+
+                <div class="footer__bottom__links">
+
+                    <div class="footer__logo">
+
+                            <img class="footer__logo--img" src="img/logo_main.png" alt="BlogerShop">
+
+                            <div class="footer__logo--text">
+
+                                <p class="footer__logo--text-upper">
+                                    Магазин канала BlogerShop
+                                </p>
+                                <p class="footer__logo--text-lower">
+                                    bloger-shop.com
+                                </p>
+
+                            </div>
+
+                    </div>
+
+                    <div class="footer__bottom__links--items">
+
+                            <span class="footer__bottom__links--item">
+                                Подарки
+                            </span>
+
+                            <span class="footer__bottom__links--item">
+                                Способы оплаты
+                            </span>
+
+                            <span class="footer__bottom__links--item">
+                                Помощь
+                            </span>
+
+                            <span class="footer__bottom__links--item">
+                                Покупка и доставка
+                            </span>
+
+                    </div>
+                
+                </div>
+
+                <div class="footer__bottom__info">
+
+                    <div class="footer__bottom__info--left">
+
+                            <span class="footer__bottom__info--text">
+                                Пользовательское соглашение
+                            </span>
+
+                            <span class="footer__bottom__info--text">
+                                Политика конфиденциальности
+                            </span>
+
+                            <span class="footer__bottom__info--text">
+                                Обработка персональных данных
+                            </span>
+
+                    </div>
+
+                    <div class="footer__bottom__info--right">
+
+                            <span class="footer__bottom__info--text">
+                                Работает при поддержке
+                            </span>
+
+                            <div class="footer__bottom__info--site">
+
+                                <img src="img/footer_logo_gaminx.png" alt="" class="footer__bottom__info--gaminx-logo">
+
+                                <span class="footer__bottom__info--gaminx-text">
+                                    GaminX Network
+                                </span>
+
+                            </div>
+
+                    </div>
+
+                </div>
+                
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <script src="/main.js">
+    </script>
+
+
+</body>
+
+</html>

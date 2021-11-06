@@ -1,0 +1,24 @@
+{
+  "name": "gaminx",
+  "version": "1.0.0",
+  "description": "Site",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel index.html",
+    "clean": "rm -rf dist/*",
+"build": "parcel build index.html"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.1.0",
+    "jquery": "^3.6.0",
+    "parcel-plugin-clean-dist": "0.0.6",
+    "popper.js": "^1.16.1"
+  },
+  "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.4",
+    "parcel-bundler": "^1.12.5",
+    "parcel-plugin-nuke-dist": "^1.0.1"
+  }
+}
